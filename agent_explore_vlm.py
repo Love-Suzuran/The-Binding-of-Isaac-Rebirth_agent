@@ -16,12 +16,12 @@ from collections import deque
 class PathFinder:
     """寻路系统 - A*算法"""
     
-    def __init__(self, grid_size=40):
+    def __init__(self, grid_size=90):
         self.grid_size = grid_size
         
         # 移动参数
         self.move_params = {
-            'step_duration': 0.075,
+            'step_duration': 0.4,
         }
         
         # 4方向移动
@@ -247,7 +247,7 @@ class ExploreAgent:
         }
         
         # 门检测阈值
-        self.door_threshold = 80
+        self.door_threshold = 60
         
         # 探索策略参数
         self.explore_params = {
